@@ -2,27 +2,21 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/fontawesome.min.css">
 <link rel="stylesheet" href="css/style.css">
 <style>
-
-
 #myVideo {
-  position: relative;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
   z-index: -1;
 }
-
-.content {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
+.content{
+    width:100vw;
+    height: 100vh;
 }
 </style>
 </head>
@@ -59,15 +53,16 @@
             </div>
         </div>
     </nav>
-<video autoplay muted loop id="myVideo">
-  <source src="./imgs/galaxy.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<div class="content">
-  <h1>Heading</h1>
-  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-  <button id="myBtn" onclick="myFunction()">Pause</button>
+    <video autoplay muted loop id="myVideo">
+        <source src="./imgs/galaxy.mp4" type="video/mp4">
+      </video>
+<div class="content d-flex align-items-center flex-column justify-content-center">
+    <div class="container">
+        <div class="" style="color:white">
+            <h1>Welcome To <br>Workland Factory</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+        </div>
+    </div> 
 </div>
 
 <div class="services" id="service" style="background-color: #ebebeb;">
@@ -100,21 +95,7 @@
       </div>
   </div>
 </div>
-
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
-
 </body>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery-3.3.1.min.js"></script>
 </html>
