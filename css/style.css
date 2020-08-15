@@ -104,6 +104,30 @@ body
     border-radius: 5px;
 }
 
+/*Testimonoal*/
+
+.testimonial .test-child {
+    background-color: black;
+    padding: 50px 0;
+    color: white;
+}
+
+.testimonial .container {
+    overflow: hidden;
+}
+
+.testimonial img {
+    width: 50%;
+    height: 60%;
+}
+
+.testimonial .row {
+    overflow: hidden
+}
+
+.testimonial .row:first-of-type {
+    margin-bottom: 40px;
+}
 
 /*Footer*/
 
