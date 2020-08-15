@@ -248,3 +248,14 @@ footer .copyright p {
     
     }
 }
+@media(max-width: 500px)
+{
+    .arrow
+    {
+        display: none;
+    }
+    .middle
+    {
+        margin: auto;
+    }
+}
