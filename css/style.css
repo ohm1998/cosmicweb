@@ -31,9 +31,6 @@ body
     background-color: white !important;
     transition : 0.5s;
 }
-.navbar .navbar-toggler {
-    background-color: white;
-}
 
 .navbar .log {
     color: #ffe25b !important;
