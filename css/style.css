@@ -17,10 +17,20 @@ body
     z-index: 1000
 }
 
-.navbar a {
+.navbar li{
     color: white !important;
+    background-color: black !important;
+    width:100%;
 }
-
+.navbar a{
+    color : white !important;
+    border-radius: 10px;
+}
+.navbar a:hover{
+    color : black !important;
+    background-color: white !important;
+    transition : 0.5s;
+}
 .navbar .navbar-toggler {
     background-color: white;
 }

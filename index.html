@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 <link rel="stylesheet" href="css/style.css">
 <style>
 #myVideo {
@@ -18,40 +19,17 @@
     width:100vw;
     height: 100vh;
 }
- @-webkit-keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-bottom {
-  0% {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-.fade-in-bottom {
-	-webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+li{
+    list-style: none;
+    text-align: center;
+    margin:auto;
 }
 </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img width="50" height="50" src="imgs/logo.png" style="background-color: black; border-radius: 15px; " alt="#" /></a>
+            <p class="navbar-brand" href="index.html"><img width="50" height="50" src="imgs/logo.png" style="background-color: black; border-radius: 15px; " alt="#" /></p>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -62,21 +40,11 @@
                         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#service">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">services</a>
+                        <a class="nav-link" href="./team.html">Team</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#test">testimonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">contact us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link log" href="#">Log in/Register</a>
-                    </li>
-                    
                 </ul>
             </div>
         </div>
@@ -84,48 +52,44 @@
     <video autoplay muted loop id="myVideo">
         <source src="./imgs/galaxy.mp4" type="video/mp4">
       </video>
-<div class="content d-flex align-items-center flex-column justify-content-center fade-in-bottom">
+<div class="content d-flex align-items-center flex-column justify-content-center animate__animated animate__fadeIn">
     <div class="container">
         <div style="color:white;text-align: center;margin:auto;">
             <h1 class="display-3 font-weight-bold font-italic heading">COSMIC-The New Virtual World</h1>
-            <p class="display-4 heading-desc">The Next Generation Social Media platform that is <span style="color:#FF9933;">Made</span> in <span style="color:#138808;">India!</span></p>
+            <p class="display-4 heading-desc">The Next Generation Social Media Platform that is <span style="color:#FF9933;">Made</span> in <span style="color:#138808;">India!</span></p>
         </div>
     </div> 
 </div>
 
-<div class="services" id="service"><!-- 
-  <div class="container"><h2 class="text-capitalize">What is Cosmic?</h2></div> -->
+<div class="services" id="service">
   <div class="services-child">
-      <div class="container">
+      <div class="container" style="text-align: center;">
           <div class="row">
-              <!-- <div class="col-lg-4 col-md-6 col-12">
-                  <div>
-                      <img src="imgs/pic4.jpg">
-                      <a href="#"><h4>Chemical Refinery</h4></a>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui</p>
-                  </div>
+              <div class="col-12" style="margin-bottom: 20px;">
+                  <h1 class="display-4 font-weight-bold" style="text-align: center;">
+                      Features
+                  </h1>
               </div>
-              <div class="col-lg-4 col-md-6 col-12">
-                Hello this is the sample text
-              </div> -->
-              <!-- <div class="col-md-6">
-                <img id="about_img" src="imgs/pic4.jpg">
-              </div> -->
               <div class="col-lg-3 sec1">
-                <div class="row"><h2>What is Cosmic?</h2></div>
-                <div class="row" style="font-size: 1.2em;">
+                <i class="fas fa-question-circle fa-7x"></i>
+                <br><br>
+                <h2>What is Cosmic?</h2>
+                <div class="" style="font-size: 1.2em;">
                   Cosmic is a Next Generation Socail Media platform made in India. It would have several new features that would make it "The Most Utilitarian" Social Media platform for all our users. The exact details of new features would be announced soon. <br> So, stay tuned!
                 </div>
               </div>
               <div class="col-lg-3 sec1">
-                <div class="row"><h2>Why the name "Cosmic"?</h2></div>
-                <div class="row" style="font-size: 1.2em;">
+                <img src="./imgs/question.svg" alt="Why?" style="height: 200px;">
+                <h2>Why the name "Cosmic"?</h2>
+                <div class="" style="font-size: 1.2em;">
                   Cosmic is a "multi-functional" platform that would have the potential to fulfil all the needs of its users.A Virtual World is being created here. Hence, the name- "Cosmic" signifying a new virtual world.
                 </div>
               </div>
               <div class="col-lg-3 sec1">
-                <div class="row"><h2>Is it Secure?</h2></div>
-                <div class="row" style="font-size: 1.2em;">
+                <i class="fas fa-lock fa-7x"></i>
+                <br><br>
+                <h2>Is it Secure?</h2>
+                <div class="" style="font-size: 1.2em;">
                   Yes, we at Cosmic give utmost value to your privacy and security of your data. For doing so, we have established sufficient securtiy controls which protect your data from any external threat.
                   We continue to review our security controls on regular basis to ensure that our platform is immune from any new emerging threat.
                 </div>
@@ -137,12 +101,13 @@
 </div>
 
 <div class="testimonial" id="test">
+    <br><br>
             <div class="container"><h2 class="text-capitalize text-center" style="color: white;">Launching Soon!</h2></div>
             <div class="test-child">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-2 col-md-1"></div>
-                        <div class="col-lg-2 col-md-3 col-4 arrow"><img  src="imgs/pic8.png"></div>
+                        <div class="col-lg-2 col-md-3 col-4 arrow"><img  src="imgs/next.svg"></div>
                         <div class="col-lg-6 col-8 middle">
                             <h4 class="text-ippercase">Become A Priority User!</h4>
                             <p>We have arranged a priority access too ! Before the application is launched 
@@ -153,7 +118,7 @@ soft launch period</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-2 col-md-3 col-4 arrow"><img style="width: 50%; height: 70%;" src="imgs/pic8.png"></div>
+                        <div class="col-lg-2 col-md-3 col-4 arrow"><img style="width: 50%; height: 70%;" src="imgs/next.svg"></div>
                         <div class="col-lg-6 col-8 middle">
                             <h4 class="text-ippercase">Register Now!</h4>
                             <p>Wish to be among our 25,000 Priority Users? Do not forget to submit your details in the <a href="#">pre-registration form</a> given. Not Sure why you should register & use the application during the soft launch? ->  <a href="#">Read Here</a></p>
@@ -164,80 +129,34 @@ soft launch period</p>
         </div>
 
 
-<footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-12">
-                        <a href="index.html" class="logo"><img height="50" width="50" src="imgs/logo.png" style="background-color: #1b1b1a;" alt="#" /></a>
-                    </div>
-                    <div class="col-lg-8" style="margin: auto; background-color: black; padding: 10px;">
-                        <div class="row">
-                            <!-- <div class="col-md-4 col-12">
-                                <i class="fas fa-map-marker-alt fa-2x"></i>
-                                <span>Mumbai,Maharshtra</span>
-                            </div> -->
-                            <div class="col-md-4">
-                                <i class="fas fa-phone fa-2x"></i>
-                                <span>(+91) 56982424536</span>
-                            </div>
-                            <div class="col-md-4" style="float:  right;">
-                                <i class="fas fa-envelope fa-2x"></i>
-                                <span>support@cosmicweb.in</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- <div class="col-lg-3 col-md-6 col-12">
-                        <div class="item">
-                            <h4 class="text-capitalize">about factory</h4>
-                            <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-                    </div> -->
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="item">
-                            <h4 class="text-capitalize">Menu</h4>
-                            <ul class='text-capitalize main-list'>
-                                <li><a href="#home">home</a></li>
-                                <li><a href="#about">about us</a></li>
-                                <li><a href="#service">Services</a></li>
-                                <li><a href="#test">testimonial</a></li>
-                                <li><a href="#contact">contact us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="item">
-                            <h4 class="text-capitalize">Our network</h4>
-                            <ul class="text-capitalize">
-                                <li><a href="#">Adopt a pet</a></li>
-                                <li><a href="#">create awareness</a></li>
-                                <li><a href="#">join compaign</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="item">
-                            <h4 class="text-capitalize">Want To Know More?</h4>
-                            <form>
-                                <input type="text" placeholder="Enter your email">
-                                <input type="submit" value="Subscribe">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <ul class="social-media">
-                    <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-                    <li><a href="#"><i class="fab fa-google-plus-square fa-2x"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                </ul>
-                <div class="copyright">
-                    <p class="col-lg-8 col-sm-6 footer-text m-0 text-white">
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i style="color: #e6382c;" class="fa fa-heart" aria-hidden="true"></i> by <a href="https://sleeksites.in" target="_blank">SleekSites</a></p>
-                </div>
+<footer style="text-align: center;margin:auto;" class="animate__animated animate__fadeIn">
+    <div class="container">
+        <div class="row">
+            <div class="col-3" style="margin-bottom:30px;">
+                <a href="index.html" class="logo"><img height="50" width="50" src="imgs/logo.png" alt="#" /></a>
             </div>
-</footer>   
+            <div class="col-3"></div>
+            <div class="col-3">
+                <i class="fas fa-phone fa-2x"></i>
+                <span>(+91) 56982424536</span>
+            </div>
+            <div class="col-3">
+                <i class="fas fa-envelope fa-2x"></i>
+                <span>support@cosmicweb.in</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 mb-4"><li><a href="#"><i style="color: white;" class="fab fa-facebook-square fa-2x"></i></a></li></div>
+            <div class="col-3 mb-4"><li><a href="#"><i style="color: white;" class="fab fa-twitter-square fa-2x"></i></a></li></div>
+            <div class="col-3 mb-4"><li><a href="#"><i style="color: white;" class="fab fa-google-plus-square fa-2x"></i></a></li></div>
+            <div class="col-3 mb-4"><li><a href="#"><i style="color: white;" class="fab fa-linkedin fa-2x"></i></a></li></div>
+        </div>
+        <div class="copyright col-12" style="text-align: center;margin:auto;">
+            <p class="footer-text m-0 text-white">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i style="color: #e6382c;" class="fa fa-heart" aria-hidden="true"></i> by <a href="https://sleeksites.in" target="_blank">SleekSites</a></p>
+        </div>
+    </div>
+</footer>    
 </body>
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
@@ -247,5 +166,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         $('.heading').removeClass('display-3')
         $('.heading-desc').removeClass('display-4')
     }
+</script>
+<script>
+    $(window).on('scroll',()=>{
+        if($(this).scrollTop() > $('#service'))
+        {
+            $('#service').addClass('animated__animate animate__zoomIn')
+        }
+    })
 </script>
 </html>
