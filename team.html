@@ -82,10 +82,13 @@ li{
                         <a class="nav-link" href="./index.html#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html#service">Features</a>
+                        <a class="nav-link" id="service_click" href="./index.html/#service">Features</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact_us">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -135,7 +138,7 @@ li{
         </div>
     </div>
 </div>
-<footer style="text-align: center;margin:auto;" class="animate__animated animate__fadeIn">
+<footer id="footer" style="text-align: center;margin:auto;" class="animate__animated animate__fadeIn">
     <div class="container">
         <div class="row">
             <div class="col-3" style="margin-bottom:30px;">
@@ -162,5 +165,16 @@ li{
 </footer> 
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script type="text/javascript">
+ 
+        $(document).ready(function (){
+            
+            $("#contact_us").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#footer").offset().top
+                }, 1000);
+            });
+        });
+</script>
 </body>
 </html>
