@@ -39,9 +39,60 @@ body {
 li{
     list-style: none;
 }
-	</style>
+
+.co_img
+{
+    margin: auto;
+    height: 25em;
+    padding:3em;
+    border-radius: 50%;
+    width: 75%;
+}
+        @media (max-width: 950px) and (min-width: 750px)
+        {
+            .co_img
+            {
+                width: 55%;
+            }
+        }
+        @media(max-width: 550px)
+        {
+            .co_img
+            {
+                height: 15em;
+                width: 70%;
+            }
+        }
+
+    </style>
 </head>
 <body>
+
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <p class="navbar-brand" href="index.html"><img width="50" height="50" src="imgs/logo.png" style="background-color: black; border-radius: 15px; " alt="#" /></p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: black;">
+                <span class="navbar-toggler-icon"> <i class="fas fa-bars" style="color:#fff; font-size:0.9em;"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-capitalize" id="nav-links">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#service">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./team.html">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
 <!-- For demo purpose -->
 <div class="container py-5">
     <div class="row text-center text-white">
@@ -58,7 +109,7 @@ li{
             <div class="card" style="-webkit-box-shadow: 0px 5px 9px 5px rgba(0,0,0,0.75);
             -moz-box-shadow: 0px 5px 9px 5px rgba(0,0,0,0.75);
             box-shadow: 0px 5px 9px 5px rgba(0,0,0,0.75);color:white;background-color:#1b1b1a;">
-                <img class="card-img-top" src="./imgs/rashi.jpeg" style="height: 25em;padding:3em;border-radius: 50%; width: 75%; margin: auto;" alt="Card image cap">
+                <img class="card-img-top co_img" src="./imgs/rashi.jpeg"  alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title font-italic">Rashi Joshi</h5>
                   <p class="font-weight-bold" style="font-size:20px">(CEO & Founder)</p>
@@ -71,7 +122,7 @@ li{
             <div class="card" style="-webkit-box-shadow: 0px 5px 9px 5px rgba(0,0,0,0.75);
             -moz-box-shadow: 0px 5px 9px 5px rgba(0,0,0,0.75);
             box-shadow: 0px 5px 9px 5px rgba(0,0,0,0.75);color:white;background-color: #1b1b1a;">
-                <img class="card-img-top" src="./imgs/hardik.jpeg" style="margin: auto; height: 25em;padding:3em;border-radius: 50%; width: 75%" alt="Card image cap">
+                <img class="card-img-top co_img" src="./imgs/hardik.jpeg"  alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title font-italic">Hardik Dave</h5>
                   <p class=" font-weight-bold" style="font-size:20px">(Co - Founder)</p>
@@ -91,10 +142,7 @@ li{
                 <a href="index.html" class="logo"><img height="50" width="50" src="imgs/logo.png" alt="#" /></a>
             </div>
             <div class="col-3"></div>
-            <div class="col-3">
-                <i class="fas fa-phone fa-2x"></i>
-                <span>(+91) 56982424536</span>
-            </div>
+            
             <div class="col-3">
                 <i class="fas fa-envelope fa-2x"></i>
                 <span>support@cosmicweb.in</span>
