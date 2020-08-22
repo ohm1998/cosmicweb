@@ -2,12 +2,12 @@
 :root {
   --main-bg-color: #040205;
 }
-
+/*
 body
 {
-    /* background-color: var(--main-bg-color); */
+     background-color: var(--main-bg-color); 
     background-color: rgba(0,0,0,1);
-}
+}*/
 .navbar {
     position: absolute;
     width: 100%;
@@ -112,7 +112,6 @@ body
 /*Testimonoal*/
 
 .testimonial .test-child {
-    background-color: black;
     padding: 50px 0;
     color: white;
 }
