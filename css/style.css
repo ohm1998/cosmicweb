@@ -2,12 +2,12 @@
 :root {
   --main-bg-color: #040205;
 }
-/*
+
 body
 {
-     background-color: var(--main-bg-color); 
-    background-color: rgba(0,0,0,1);
-}*/
+    background-color: var(--main-bg-color);
+    /*background-color: rgba(0,0,0,1);*/
+}
 *
 {
     background: transparent;

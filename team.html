@@ -3,6 +3,7 @@
 <head>
     <title>Team Cosmic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./imgs/logo.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" type="text/css" href="./css/fontawesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -45,7 +46,14 @@ body {
 li{
     list-style: none;
 }
-
+.bgImageSet{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./imgs/bgimage.gif');
+    z-index: 1000;
+}
 .co_img
 {
     margin: auto;
@@ -72,9 +80,7 @@ li{
 
     </style>
 </head>
-<body>
-
-
+<body class="bgImageSet">
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img width="50" height="50" src="imgs/logo.png" style="background-color: black; border-radius: 15px; " alt="#" /></a>
@@ -110,11 +116,6 @@ li{
         </div>
     </div>
 </div>
-
-<video autoplay muted loop id="myVideo" poster="./imgs/bg-masthead.jpg">
-    <source src="./imgs/galaxy.mp4" type="video/mp4">
-</video>
-
 <div class="container" style="margin-bottom: 50px;">
     <div class="row text-center animate__animated animate__fadeInUp">
         <div class="col-lg-6 col-md-12 mb-5">
