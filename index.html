@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="css/style.css">
 <style>
 #myVideo {
-  position: absolute;
+  position: absolute; /*For ONLY DIV video display */
+  /* position: fixed; */ /* For Complete HTML Display */
   right: 0;
   bottom: 0;
   min-width: 100%; 
@@ -29,7 +30,7 @@ li{
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <p class="navbar-brand" href="index.html"><img width="50" height="50" src="imgs/logo.png" style="background-color: black; border-radius: 15px; " alt="#" /></p>
+            <a class="navbar-brand" href="index.html"><img width="50" height="50" src="imgs/logo.png" style="background-color: black; border-radius: 15px; " alt="#" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: black;">
                 <span class="navbar-toggler-icon"> <i class="fas fa-bars" style="color:#fff; font-size:0.9em;"></i></span>
             </button>
@@ -52,10 +53,10 @@ li{
             </div>
         </div>
     </nav>
-    <video autoplay muted loop id="myVideo">
+<div class="content d-flex align-items-center flex-column justify-content-center animate__animated animate__fadeIn">
+    <video autoplay muted loop id="myVideo" poster="./imgs/bg-masthead.jpg">
         <source src="./imgs/galaxy.mp4" type="video/mp4">
       </video>
-<div class="content d-flex align-items-center flex-column justify-content-center animate__animated animate__fadeIn">
     <div class="container">
         <div style="color:white;text-align: center;margin:auto;">
             <h1 class="display-3 font-weight-bold font-italic heading">COSMIC-The New Virtual World</h1>
@@ -73,7 +74,7 @@ li{
                       Features
                   </h1>
               </div>
-              <div class="col-lg-3 sec1">
+              <div class="col-lg-4 sec1" style="text-align: left;">
                 <i class="fas fa-question-circle fa-7x"></i>
                 <br><br>
                 <h2>What is Cosmic?</h2>
@@ -81,14 +82,14 @@ li{
                   Cosmic is a Next Generation Socail Media platform made in India. It would have several new features that would make it "The Most Utilitarian" Social Media platform for all our users. The exact details of new features would be announced soon. <br> So, stay tuned!
                 </div>
               </div>
-              <div class="col-lg-3 sec1">
+              <div class="col-lg-4 sec1">
                 <img src="./imgs/question.svg" alt="Why?" style="height: 200px;">
                 <h2>Why the name "Cosmic"?</h2>
                 <div class="" style="font-size: 1.2em;">
                   Cosmic is a "multi-functional" platform that would have the potential to fulfil all the needs of its users.A Virtual World is being created here. Hence, the name- "Cosmic" signifying a new virtual world.
                 </div>
               </div>
-              <div class="col-lg-3 sec1">
+              <div class="col-lg-4 sec1" style="text-align:right;">
                 <i class="fas fa-lock fa-7x"></i>
                 <br><br>
                 <h2>Is it Secure?</h2>
@@ -102,41 +103,37 @@ li{
       </div>
   </div>
 </div>
-
 <div class="testimonial" id="test">
-    <br><br>
-            <div class="container"><h2 class="text-capitalize text-center" style="color: white;">Launching Soon!</h2></div>
-            <div class="test-child">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-1"></div>
-                        <div class="col-lg-2 col-md-3 col-4 arrow"><img  src="imgs/next.svg"></div>
-                        <div class="col-lg-6 col-8 middle">
-                            <h4 class="text-ippercase">Become A Priority User!</h4>
-                            <p>We have arranged a priority access too ! Before the application is launched 
-on these app stores,we would be having a soft launch of the application 
-where we would share a private link to the application to our First 25,000 
-Priority Users who would be able to use the application even during the 
-soft launch period</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-2 col-md-3 col-4 arrow"><img style="width: 50%; height: 70%;" src="imgs/next.svg"></div>
-                        <div class="col-lg-6 col-8 middle">
-                            <h4 class="text-ippercase">Register Now!</h4>
-                            <p>Wish to be among our 25,000 Priority Users? Do not forget to submit your details in the <a href="#">pre-registration form</a> given. Not Sure why you should register & use the application during the soft launch? ->  <a href="#">Read Here</a></p>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="test-child">
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="fas fa-chart-line fa-7x"></i>
+                    <br/><br/>
+                    <h4 class="text-ippercase">Become A Priority User!</h4>
+                        <p>We have arranged a priority access too ! Before the application is launched 
+                        on these app stores,we would be having a soft launch of the application 
+                        where we would share a private link to the application to our First 25,000 
+                        Priority Users who would be able to use the application even during the 
+                        soft launch period</p>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4" style="text-align: right;">
+                    <i class="fas fa-clipboard-check fa-7x"></i>
+                    <br><br/>
+                    <h4 class="text-ippercase">Register Now!</h4>
+                    <p>Wish to be among our 25,000 Priority Users? Do not forget to submit your details in the <a href="#">pre-registration form</a> given. Not Sure why you should register & use the application during the soft launch? ->  <a href="#">Read Here</a></p>
                 </div>
             </div>
         </div>
-
+    </div>
+</div>
 
 <footer id="footer" style="text-align: center;margin:auto;" class="animate__animated animate__fadeIn">
     <div class="container">
         <div class="row">
             <div class="col-lg-3" style="margin-bottom:30px;">
-                <a href="index.html" class="logo"><img height="50" width="50" src="imgs/logo.png" alt="#" /></a>
+                <a href="index.html" class="logo"><img height="75" width="75" src="imgs/logo.png" alt="#" /></a>
             </div>
             <div class="col-lg-3"></div>
             <!-- <div class="col-3">
@@ -179,17 +176,17 @@ soft launch period</p>
     })
 </script>
 <script>
-        $(document).ready(function (){
-            $("#service_click").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#service").offset().top
-                }, 1000);
-            });
-            $("#contact_us").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#footer").offset().top
-                }, 1000);
-            });
+    $(document).ready(function (){
+        $("#service_click").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#service").offset().top
+            }, 1000);
         });
-    </script>
+        $("#contact_us").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#footer").offset().top
+            }, 1000);
+        });
+    });
+</script>
 </html>

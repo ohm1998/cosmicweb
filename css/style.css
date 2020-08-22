@@ -5,7 +5,8 @@
 
 body
 {
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
+    background-color: rgba(0,0,0,1);
 }
 .navbar {
     position: absolute;
@@ -40,14 +41,14 @@ body
 
 #service
 {
-     background: url("../imgs/bg-masthead.jpg");
-     background-attachment: fixed;
+     /* background: url("../imgs/bg-masthead.jpg");
+     background-attachment: fixed; */
      color: white;
 }
 
 .services {
     margin-bottom: 50px
-    margin-top : 50px;
+    margin-top:50px;
    
 }
 
