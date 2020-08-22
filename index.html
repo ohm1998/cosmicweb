@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" href="./css/fontawesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+<!-- <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" /> -->
 <link rel="stylesheet" href="css/style.css">
 <style>
 #myVideo {
-  /*position: absolute;*/ /*For ONLY DIV video display */
-  position: fixed; /* For Complete HTML Display */
+  position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%; 
@@ -53,10 +53,16 @@ li{
             </div>
         </div>
     </nav>
+
 <div class="content d-flex align-items-center flex-column justify-content-center animate__animated animate__fadeIn">
-    <video autoplay muted loop id="myVideo" poster="./imgs/bg-masthead.jpg">
-        <source src="./imgs/galaxy.mp4" type="video/mp4">
-      </video>
+    <video
+    id="myVideo"
+    poster="./imgs/bg-masthead.jpg"
+    autoplay
+    loop
+    src="./imgs/galaxy.mp4"
+    >
+    </video>
     <div class="container">
         <div style="color:white;text-align: center;margin:auto;">
             <h1 class="display-3 font-weight-bold font-italic heading">COSMIC-The New Virtual World</h1>
@@ -112,7 +118,7 @@ li{
       </div>
   </div>
 </div>
-<div class="testimonial" id="test">
+<div class="testimonial" id="test" style="background-color: transparent;">
     <div class="container">
         <div class="test-child">
             <div class="row">
@@ -169,6 +175,7 @@ li{
 </body>
 <script src="./js/jquery-3.3.1.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<!-- <script src="https://vjs.zencdn.net/7.8.4/video.js"></script> -->
 <script>
     if($(window).width() < 775)
     {
