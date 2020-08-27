@@ -266,4 +266,8 @@ footer .copyright p {
     {
         margin: auto;
     }
+    .heading
+    {
+        font-size:10px;
+    }
 }
