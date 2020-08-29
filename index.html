@@ -34,9 +34,18 @@ li{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('./imgs/bgimage.gif');
+    background-image: url('./imgs/bg-masthead.jpg');
     z-index: 1000;
 }
+/* .imageLoadTest
+{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./imgs/bgimage.gif');
+    z-index: 1000;
+} */
 @media(max-width: 1300px)
 {
     .header
@@ -59,6 +68,7 @@ li{
 </style>
 </head>
 <body class="bgImageSet">
+    <img src="" alt="" class="imageLoadTest">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img width="50" height="50" src="imgs/logo.png" alt="#" /></a>
@@ -92,6 +102,7 @@ li{
     src="./imgs/galaxy.mp4"
     >
     </video> -->
+
 <div class="header content d-flex align-items-center flex-column justify-content-center animate__animated animate__fadeIn">
     
     <div class="container">
@@ -236,5 +247,26 @@ li{
             }, 1000);
         });
     });
+</script>
+<!-- <script>
+    $(function () {     
+        var src = "http://cosmicweb.in/imgs/bgimage.gif";     
+        var $e = $("#service").css({ opacity : 0 });     
+        //var $e = $(".bgImageSet").css({ opacity : 0 });     
+        var img = new Image(src);     
+        img.onload = function () {        
+        $e.css({             
+            'background-image': "url(" + src + ")",         
+            }).animate({ opacity : 1.0}, 3000);     
+        };     
+        img.src = src; });
+</script> -->
+<script>
+    var image = document.getElementsByClassName('bgImageSet')[0]; 
+    var downloadingImage = new Image(); 
+    downloadingImage.onload = function(){     
+        $(image).css({'background-image': "url(" + this.src + ")"})    
+    }; 
+    downloadingImage.src = "./imgs/bgimage.gif"
 </script>
 </html>
